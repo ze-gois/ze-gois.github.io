@@ -1,0 +1,513 @@
+<html lang="en">
+    <head>
+        <title>José Gois - Curriculum</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        :root {
+            --primary: #2c3e50;
+            --accent: #3498db;
+            --light: #f8f9fa;
+            --gray: #555;
+        }
+        body {
+            font-family: 'Segoe UI', Arial, sans-serif;
+            max-width: 850px;
+            margin: 0 auto;
+            padding: 40px 20px;
+            color: #333;
+            line-height: 1.6;
+        }
+        header {
+            text-align: center;
+            border-bottom: 3px solid #2c3e50;
+            padding-bottom: 20px;
+            margin-bottom: 30px;
+        }
+        header h1 {
+            margin: 0;
+            font-size: 2.2em;
+            color: #2c3e50;
+        }
+        header p.title {
+            margin: 5px 0 15px;
+            font-size: 1.1em;
+            color: #555;
+        }
+        .contact-info {
+            font-size: 0.95em;
+            color: #666;
+        }
+        .contact-info span {
+            margin: 0 10px;
+        }
+        section {
+            margin-bottom: 30px;
+        }
+        section h2 {
+            font-size: 1.3em;
+            color: #2c3e50;
+            border-bottom: 1px solid #ccc;
+            padding-bottom: 5px;
+            margin-bottom: 15px;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+        .entry {
+            margin-bottom: 18px;
+        }
+        .entry-header {
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            font-weight: bold;
+        }
+        .entry-header .role {
+            font-size: 1.05em;
+            color: #222;
+        }
+        .entry-header .date {
+            color: #777;
+            font-weight: normal;
+            font-size: 0.9em;
+        }
+        .entry-subheader {
+            font-style: italic;
+            color: #555;
+            margin-bottom: 6px;
+        }
+        ul.entry-details {
+            margin: 5px 0 0 20px;
+            padding: 0;
+        }
+        ul.entry-details li {
+            margin-bottom: 4px;
+        }
+
+
+        .skills-list {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 8px;
+            margin: 0;
+            padding: 0;
+        }
+
+        .skills-list li {
+            list-style: none;
+            background: #eef2f5;
+            padding: 5px 12px;
+            border-radius: 15px;
+            font-size: 0.9em;
+            color: #2c3e50;
+        }
+
+        .scholarships-list {
+            display: flex;
+            flex-direction: column;
+            gap: 5px;
+        }
+        .scholarship-entry {
+            display: flex;
+            align-items: center;
+            gap: 5px;
+            padding: 10px 15px;
+            background: #f7f9fa;
+            border-left: 4px solid #2c3e50;
+            border-radius: 6px;
+            box-shadow: 0 1px 3px rgba(0,0,0,0.08);
+            transition: transform 0.15s ease, box-shadow 0.15s ease;
+        }
+        .scholarship-entry:hover {
+            transform: translateX(4px);
+            box-shadow: 0 2px 6px rgba(0,0,0,0.15);
+        }
+        .scholarship-entry .year {
+            font-weight: bold;
+            color: #fff;
+            background: #2c3e50;
+            padding: 4px 10px;
+            border-radius: 12px;
+            font-size: 0.85em;
+            min-width: 50px;
+            text-align: center;
+        }
+        .scholarship-entry .agency {
+            font-weight: bold;
+            color: #2c3e50;
+            background: #eef2f5;
+            padding: 4px 12px;
+            border-radius: 12px;
+            font-size: 0.85em;
+        }
+        .scholarship-entry .advisor {
+            color: #444;
+            font-style: italic;
+        }
+
+        .diplom {
+            display: block;
+            max-width: 90%;
+            height: auto;
+            border: 6px solid #fff;
+            outline: 2px solid #2c3e50;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+            border-radius: 4px;
+            padding: 4px;
+            background: #fff;
+        }
+
+        .diplomas-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            grid-template-rows: 1fr 1fr;
+            gap: 20px;
+            padding: 0;
+        }
+        .diplomas-grid li {
+            list-style: none;
+        }
+
+        .historical-grid {
+            align-items: center;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            grid-template-rows: 1fr 1fr 1fr;
+            gap: 20px;
+            padding: 0;
+        }
+
+        .historical-grid li {
+            list-style: none;
+            align-items: center;
+        }
+
+        .thumbnail_abstract_grid a {
+            float: left; /* or right */
+            margin: 0px 15px 0px -10px; /* adds spacing around the image */
+            width: 110px; /* optional: control image size */
+            height:130px;
+        }
+    </style>
+    </head>
+
+    <body>
+        <header>
+            <h1>José Gois</h1>
+            <p class="title">Aspiring Operating Systems & Cybersecurity Specialist</p>
+            <div class="contact-info">
+                <div>📍 Natal, RN, Brazil </div>
+                <div>E-mail: <a href="mailto:jose.gois.014@ufrn.br">jose.gois.014@ufrn.br</a></div>
+                <div>GitHub: <a href="https://github.com/ze-gois">@ze-gois</a></div>
+                <div>Telegram: <a href="https://t.me/jose_gois">@jose_gois</a></div>
+                <div>WhatsApp: <a href="https://wa.me/5584991144431">+5584991144431</a></div>
+                <div>X: <a href="https://x.com/@zenrique">@zenrique</a></div>
+            </div>
+        </header>
+
+        <section>
+            <h2>Professional Summary</h2>
+            White male, 37 years old. Former neuroscientist with a PhD in Computational
+            Neuroscience transitioning into Operating Systems and Cybersecurity.
+            Currently pursuing undergraduate degrees in Computer Science (UFRN) and
+            Information Security Technology (Uninter).
+            Experienced in low-level programming (C, C++, Rust), Linux systems, and
+            building abstractions over the Linux kernel. Strong research background
+            with peer-reviewed publications and extensive data analysis experience.
+        </section>
+
+        <section>
+            <h2>Education</h2>
+            <ul class="entry-details" style="margin-left:0; list-style:none;">
+                <li class="entry">
+                    <div class="entry-header">
+                        <span class="role">Computer Science (Undergraduate)</span>
+                        <span class="date">In progress</span>
+                    </div>
+                    <div class="entry-subheader">Federal University of Rio Grande do Norte (UFRN)</div>
+                </li>
+                <li class="entry">
+                    <div class="entry-header">
+                        <span class="role">Information Security Technology (Undergraduate)</span>
+                        <span class="date">In progress</span>
+                    </div>
+                    <div class="entry-subheader">Uninter</div>
+                </li>
+                <li class="entry">
+                    <div class="entry-header">
+                        <span class="role">PhD. in Computational Neuroscience</span>
+                        <span class="date">2016-2020</span>
+                    </div>
+                    <div class="entry-subheader">UFRN</div>
+                </li>
+                <li class="entry">
+                    <div class="entry-header">
+                        <span class="role">MSc. in Molecular Neuroscience</span>
+                        <span class="date">2012-2015</span>
+                    </div>
+                    <div class="entry-subheader">UFRN</div>
+                </li>
+                <li class="entry">
+                    <div class="entry-header">
+                        <span class="role">BSc. in Information Technology</span>
+                        <span class="date">2018-2024</span>
+                    </div>
+                    <div class="entry-subheader">UFRN</div>
+                </li>
+                <li class="entry">
+                    <div class="entry-header">
+                        <span class="role">BSc. in Science and Technology</span>
+                        <span class="date">2009-2012</span>
+                    </div>
+                    <div class="entry-subheader">UFRN</div>
+                </li>
+            </ul>
+        </section>
+
+        <section>
+            <h2>Technical Skills</h2>
+            <ul>
+                <li>Linux</li>
+                <li>Low-level systems programming</li>
+            </ul>
+
+            <div class="skills-list-wrapper">
+                <h3>Programming Languages</h3>
+                <ul class="skills-list">
+                    <li>C</li>
+                    <li>C++</li>
+                    <li>Rust</li>
+                    <li>Shell</li>
+                    <li>Python</li>
+                </ul>
+            </div>
+
+            <div class="skills-list-wrapper">
+                <h3>Web</h3>
+                <ul class="skills-list">
+                    <li>HTML</li>
+                    <li>CSS</li>
+                    <li>JavaScript</li>
+                </ul>
+            </div>
+
+            <div class="skills-list-wrapper">
+                <h3>Others</h3>
+                <ul class="skills-list">
+                    <li>MATLAB</li>
+                    <li>Arduino</li>
+                    <li>ESP-32</li>
+                </ul>
+            </div>
+        </section>
+
+        <section>
+            <h2><a href="https://crates.io/users/ze-gois">My Rust crates</a></h2>
+            I have built a crate ecosystem that gives us abstraction over the userspace application interface from Linux's kernel.
+
+            <ul>
+                <li><a href="https://crates.io/crates/ample">Ample</a> - This crate gives us abstraction over the Linux kernel.</li>
+                <li><a href="https://crates.io/crates/userspace">Userspace</a> - This crate bootstraps Rust from assembly and provides a userspace environment.</li>
+            </ul>
+        </section>
+
+
+        <section>
+            <h2>Scholarships</h2>
+
+            <div class="scholarships-list">
+                <div class="scholarship-entry">
+                    <span class="year">2024</span>
+                    <span class="agency">CNPq</span>
+                    <span class="advisor">Wedson Almeida Filho</span>
+                </div>
+                <div class="scholarship-entry">
+                    <span class="year">2020</span>
+                    <span class="agency">Capes</span>
+                    <span class="advisor">Sérgio Medeiros</span>
+                </div>
+                <div class="scholarship-entry">
+                    <span class="year">2016</span>
+                    <span class="agency">Capes</span>
+                    <span class="advisor">Adriano Bretanha Lopes Tort</span>
+                </div>
+                <div class="scholarship-entry">
+                    <span class="year">2013</span>
+                    <span class="agency">Conicet</span>
+                    <span class="advisor">Gustavo Paracha</span>
+                </div>
+                <div class="scholarship-entry">
+                    <span class="year">2012</span>
+                    <span class="agency">Capes</span>
+                    <span class="advisor">Richardson Naves Leão</span>
+                </div>
+                <div class="scholarship-entry">
+                    <span class="year">2012</span>
+                    <span class="agency">CNPq</span>
+                    <span class="advisor">Adriano Bretanha Lopes Tort</span>
+                </div>
+                <div class="scholarship-entry">
+                    <span class="year">2011</span>
+                    <span class="agency">CNPq</span>
+                    <span class="advisor">Sergio Neuenshwander</span>
+                </div>
+                <div class="scholarship-entry">
+                    <span class="year">2011</span>
+                    <span class="agency">CNPq</span>
+                    <span class="advisor">Draulio de Araújo</span>
+                </div>
+                <div class="scholarship-entry">
+                    <span class="year">2010</span>
+                    <span class="agency">Capes</span>
+                    <span class="advisor">Aquiles Burlamaqui</span>
+                </div>
+                <div class="scholarship-entry">
+                    <span class="year">2009</span>
+                    <span class="agency">CNPq</span>
+                    <span class="advisor">Nelio Cacho</span>
+                </div>
+            </div>
+        </section>
+
+        <section style="display: block;">
+            <h2>Publications</h2>
+            <ul id="publications-list">
+                <li>
+
+                    <h3><a href="https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0053374">
+                        Rising Publication Delays Inflate Journal Impact Factors
+                    </a>
+                    </h3>
+                    <div class="thumbnail_abstract_grid">
+                        <a href="assets/artigos/delay_inflates.pdf">
+                            <img src="assets/artigos/delay_inflates.png" alt="Rising Publication Delays Inflate Journal Impact Factors - PLOS ONE" style="max-width: 120px; height: auto;">
+                        </a>
+                        <div>
+                            <p>This article demonstrates that the impact factor of hybrid journals (those with both online and print editions) is artificially inflated due to the way the metric is calculated. Specifically, the physical publication date is used, while the increasingly earlier online publication date is ignored. As a result, articles have a longer window to accumulate citations, which distorts the measure of their influence.</p>
+                            <p>My work focuses on data collection and analysis. I manually gather publication and citation data from Elsevier’s Web of Knowledge and process it using MATLAB to investigate this effect.</p>
+                        </div>
+                    </div>
+                    <span class="pub-meta">(2013 | Citations: 101 | Venue: PLOS ONE)</span>
+                </li>
+                <li>
+                    <a href="https://www.frontiersin.org/journals/human-neuroscience/articles/10.3389/fnhum.2013.00836/full">
+                        Dream characteristics in a Brazilian sample: an online survey focusing on lucid dreaming
+                    </a>
+                    <div class="thumbnail_abstract_grid">
+                        <a href="assets/artigos/lucid_dream.pdf">
+                            <img src="assets/artigos/lucid_dream.png" alt="Dream characteristics in a Brazilian sample - Frontiers in Human Neuroscience" style="max-width: 120px; height: auto;">
+                        </a>
+                        <div>
+                            <p>
+                                This article presents survey data on lucid dreaming collected from a Brazilian sample.
+                                We gathered responses from 1,000 participants using a web-based questionnaire and
+                                conducted summary statistics and descriptive analyses of the results.
+                            </p>
+                            <p>
+                                I contributed during the second stage of data collection and analysis.
+                                Specifically, I compiled the survey’s CSV files and processed them
+                                using MATLAB to explore patterns in the data.
+                            </p>
+                        </div>
+                    </div>
+                    <span class="pub-meta">(2013 | Citations: 42 | Venue: Frontiers in Human Neuroscience)</span>
+                </li>
+                <li>
+                    <a href="https://journals.physiology.org/doi/full/10.1152/jn.00367.2014">
+                        Interconnection and synchronization of neuronal populations in the mouse medial septum/diagonal band of Broca
+                    </a>
+                    <div class="thumbnail_abstract_grid">
+                        <a href="assets/artigos/medial_septum.pdf">
+                            <img src="assets/artigos/medial_septum.png" alt="Interconnection and synchronization of neuronal populations in the mouse medial septum/diagonal band of Broca - Journal of Neurophysiology" style="max-width: 120px; height: auto;">
+                        </a>
+                        <div>
+                            <p>
+                                We analyzed the interconnection and synchronization of neuronal populations
+                                in the mouse medial septum/diagonal band of Broca (MS/DBB). Distinct stimulation
+                                methods were employed while recording intracellular neuronal activity using the patch-clamp technique.
+                            </p>
+                            <p>
+                                My contribution involved preparing and recording brain slices under a microscope,
+                                using micromanipulators to position a glass pipette adjacent to the membrane of MS/DBB neurons.
+                                During these recordings, I applied nicotine stimulation and observed no detectable effects,
+                                leading to the conclusion that nicotinic receptors were absent in these neurons.
+                            </p>
+                        </div>
+                    </div>
+                    <span class="pub-meta">(2014 | Citations: 40 | Venue: Journal of Neurophysiology)</span>
+                </li>
+                <li>
+                    <a href="https://www.cell.com/cell-reports/fulltext/S2211-1247(18)31643-7">
+                        Characterizing Speed Cells in the Rat Hippocampus
+                    </a>
+                    <div class="thumbnail_abstract_grid">
+                        <a href="assets/artigos/speed_cell.pdf">
+                            <img src="assets/artigos/speed_cell.png" alt="Characterizing Speed Cells in the Rat Hippocampus - Cell Reports" style="max-width: 120px; height: auto;">
+                        </a>
+                        <div>
+                            <p>
+                                I used an open dataset in behavioral neuroscience to demonstrate that the locomotion
+                                speed of rats positively correlates with the activity of a small subset of hippocampal
+                                neurons. These neurons were recorded using extracellular electrodes. Based on the
+                                observed firing patterns, I argued that these neurons are inhibitory in nature.
+                            </p>
+                        </div>
+                    </div>
+                    <span class="pub-meta">(2018 | Citations: 79 | Venue: Cell Reports)</span>
+                </li>
+            </ul>
+        </section>
+
+        <section>
+            <h2>Diplomas</h2>
+            <ul class="diplomas-grid">
+                <li>
+                    Bachelor's Degree in Science and Technology
+                    <div><a href="assets/diplomas/diploma_cet.jpg"> <img class="diplom" src="assets/diplomas/diploma_cet.jpg" alt="Diploma - Bachelor's Degree in Science and Technology"></a></div>
+                </li>
+                <li>
+                    Bachelor's Degree in Information Technology
+                    <div><a href="assets/diplomas/diploma_bti.png"> <img class="diplom" src="assets/diplomas/diploma_bti.png" alt="Diploma - Bachelor's Degree in Information Technology"></a></div>
+                </li>
+                <li>
+                    Master's Degree in Molecular Neuroscience
+                    <div><a href="assets/diplomas/diploma_master.png"> <img class="diplom" src="assets/diplomas/diploma_master.png" alt="Diploma - Master's Degree in Molecular Neuroscience"></a></div>
+                </li>
+                <li>
+                    Doctorate Degree in Computational Neuroscience
+                    <div><a href="assets/diplomas/diploma_doutorado.jpg"> <img class="diplom" src="assets/diplomas/diploma_doutorado.jpg" alt="Diploma - Doctorate Degree in Computational Neuroscience"></a></div>
+                </li>
+            </ul>
+        </section>
+
+        <section>
+            <h2>Historicals</h2>
+            <ul class="historical-grid">
+                <li>
+                    Information Systems
+                    <div><a href="assets/historicos/historico_unp.pdf"> <img class="diplom" src="assets/historicos/historico_unp.png" alt="Transcript - Information Systems"></a></div>
+                </li>
+                <li>
+                    Science and Technology
+                    <div><a href="assets/historicos/historico_2009032110.pdf"> <img class="diplom" src="assets/historicos/historico_2009032110.png" alt="Transcript - Science and Technology"></a></div>
+                </li>
+                <li>
+                    Information Technology
+                    <div><a href="assets/historicos/historico_20180057876.pdf"> <img class="diplom" src="assets/historicos/historico_20180057876.png" alt="Transcript - Information Technology"></a></div>
+                </li>
+                <li>
+                    Molecular Neuroscience
+                    <div><a href="assets/historicos/historico_2012118704.pdf"> <img class="diplom" src="assets/historicos/historico_2012118704.png" alt="Transcript - Molecular Neuroscience"></a></div>
+                </li>
+                <li>
+                    Computational Neuroscience
+                    <div><a href="assets/historicos/historico_2016101160.pdf"> <img class="diplom" src="assets/historicos/historico_2016101160.png" alt="Transcript - Computational Neuroscience"></a></div>
+                </li>
+                <li>
+                    Computer Science
+                    <div><a href="assets/historicos/historico_20250065940.pdf"> <img class="diplom" src="assets/historicos/historico_20250065940.png" alt="Transcript - Computer Science"></a></div>
+                </li>
+            </ul>
+        </section>
+    </body>
+</html>
